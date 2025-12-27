@@ -26,7 +26,25 @@ To build a C program that prints integer, float,character, and string literals o
 ### Step 4: 
    Stop
 # Program:
+#include <stdio.h>
+
+int main() {
+    int intLiteral = 25;
+    float floatLiteral = 3.14f;
+    char charLiteral = 'A';
+    char stringLiteral[] = "Hello, C Programming!";
+
+    printf("Integer Literal: %d\n", intLiteral);
+    printf("Floating-point Literal: %.2f\n", floatLiteral);
+    printf("Character Literal: %c\n", charLiteral);
+    printf("String Literal: %s\n", stringLiteral);
+
+    return 0;
+}
+
 # Output:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/78bfcd29-1330-458b-800b-bfbcd5e92f6c" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -57,7 +75,22 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6:  
   Stop
 # Program:
+#include <stdio.h>
+
+#define PI 3.14
+
+int main() {
+    const int MAX = 100;
+
+    printf("Macro Constant PI: %.2f\n", PI);
+    printf("Constant Variable MAX: %d\n", MAX);
+
+    return 0;
+}
+
 # Output:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4126a739-52c5-40c8-9447-353719ce3169" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -81,7 +114,25 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 5:    
    Stop
 # Program:
+#include <stdio.h>
+
+int main() {
+    int i = 10;
+    float f = 5.25f;
+    double d = 12.345678;
+    char c = 'X';
+
+    printf("Integer value: %d\n", i);
+    printf("Float value: %.2f\n", f);
+    printf("Double value: %.6lf\n", d);
+    printf("Character value: %c\n", c);
+
+    return 0;
+}
+
 # Output:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d59b4db9-1bb7-4df6-bf61-a7ce91b7fc28" />
+
 # Result: 
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
@@ -120,7 +171,41 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+#include <stdio.h>
+
+int main() {
+    int a, b;
+
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
+
+    printf("\nArithmetic Operations:\n");
+    printf("Addition: %d\n", a + b);
+    printf("Subtraction: %d\n", a - b);
+    printf("Multiplication: %d\n", a * b);
+
+    if (b != 0) {
+        printf("Division: %d\n", a / b);
+        printf("Remainder: %d\n", a % b);
+    } else {
+        printf("Division and Remainder: Undefined (division by zero)\n");
+    }
+
+    printf("\nBitwise Operations:\n");
+    printf("AND: %d\n", a & b);
+    printf("OR: %d\n", a | b);
+    printf("XOR: %d\n", a ^ b);
+    printf("Left Shift (a << 1): %d\n", a << 1);
+    printf("Right Shift (a >> 1): %d\n", a >> 1);
+    printf("NOT (~a): %d\n", ~a);
+
+    return 0;
+}
+
 # Output:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2c71abb4-45df-467f-ae61-363ba3be5328" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/35ccb363-36a6-40d6-8d44-86a5bef89c35" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -165,7 +250,29 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+#include <stdio.h>
+
+int main() {
+    char ch;
+
+    printf("Enter a character: ");
+    scanf(" %c", &ch);
+
+    (ch >= '0' && ch <= '9') ? 
+        printf("Digit\n") :
+    ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) ?
+        ((ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||
+          ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U') ?
+            printf("Vowel\n") :
+            printf("Consonant\n")) :
+        printf("Special Symbol\n");
+
+    return 0;
+}
+
 # Output:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f7cc09af-07cd-4dc4-9254-b101759abf69" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
